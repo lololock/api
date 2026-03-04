@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mes tâches</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div id="app" class="app-container">
+            <h1>📝 Mes tâches</h1>
+
+            <div class="task-input">
+                <input v-model="newTitle" placeholder="Ajouter une nouvelle tâche...">
+                <button @click="createTask" class="btn-primary">Ajouter</button>
+            </div>
+
+            <ul class="task-list">
+                <li 
+                    v-for="task in tasks" 
+                    :key="task.id" 
+                    class="task-item"
+                    :class="{ done: task.done }"
+                    >
+                    <span>{{ task.title }}</span>
+
+                    <div class="actions">
+                        <button @click="toggleDone(task)" class="btn-small">✔</button>
+                        <button @click="deleteTask(task.id)" class="btn-small btn-danger">✖</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

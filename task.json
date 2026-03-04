@@ -1,0 +1,20 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"task"},
+{"type":"table","name":"tasks","database":"task","data":
+[
+{"id":"2","title":"dsdds","done":"1"},
+{"id":"3","title":"dsdds","done":"0"},
+{"id":"4","title":"dsddsdsdssd","done":"0"},
+{"id":"5","title":"dsdsds","done":"0"},
+{"id":"6","title":"dsdssd","done":"0"},
+{"id":"7","title":"dsdds","done":"0"},
+{"id":"8","title":"yttyt","done":"0"},
+{"id":"9","title":"ggfgf","done":"0"},
+{"id":"10","title":"uiol*","done":"0"},
+{"id":"11","title":"fdfdfdfd","done":"0"},
+{"id":"12","title":"dsdsds","done":"0"},
+{"id":"13","title":"lopmlioiuuu","done":"0"}
+]
+}
+]
